@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Login page styling */
+.home {
+  width: 100%;
+  height: 100%;
+}
+.headerLogin {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #cb3144;
+}
+.loginForm {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.loginWrapper {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.loginWrapper i {
+  color: #b9b9b9;
+}
+
+.loginWrapper::before {
+  content: "Login";
+  width: 45px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-14px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+.loginWrapper input {
+  width: 93%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.passwordWrapper {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.passwordWrapper i {
+  color: #b9b9b9;
+  transform: rotate(45deg);
+}
+.passwordWrapper::before {
+  content: "Password";
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-14px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+.passwordWrapper input {
+  width: 93%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.loginbtn {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  background-color: #cb3144;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.loginbtn:hover {
+  color: #cb3144;
+  background-color: #fff;
+  font-weight: bold;
+  border: 1px solid #cb3144;
+  transform: scale(1.05);
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Registration section styling */
+
+.registrationForm {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.registrationForm .loginWrapper::before {
+  content: "Name";
+  width: 45px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-17px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+.registrationForm .passwordWrapper::before {
+  content: "Age";
+  width: 35px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-17px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+.registrationForm .passwordWrapper i {
+  color: #b9b9b9;
+  transform: rotate(0deg);
+  font-size: 12px;
+}
+
+.registrationForm select {
+  width: 93%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.registrationForm .jobsWrapper {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.registrationForm .jobsWrapper::before {
+  content: "Specialization";
+  width: 98px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-17px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+.registrationForm .jobsWrapper i {
+  color: #b9b9b9;
+  transform: rotate(0deg);
+  font-size: 12px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.skills input {
+  margin-right: 10px;
+}
+
+.skills i {
+  margin-right: 5px;
+  color: #cb3144;
+}
+
+.skills::before {
+  content: "Additional Skills";
+  width: 118px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-22px);
+  background-color: #fff;
+  font-size: 15px;
+  color: #b9b9b9;
+}
+
+/* Loading */
+
+.loadingWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preWrapper {
+  width: 200px;
+  height: 180px;
+  display: flex;
+}
+
+.loading1,
+.loading2,
+.loading3 {
+  width: 110px;
+  height: 110px;
+
+  position: absolute;
+  border-radius: 50%;
+  animation-name: loading;
+  transition: transform 0.6s ease;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+.loading1 {
+  top: 36%;
+  left: 46%;
+  border-bottom: 4px solid #cb3144;
+}
+
+.loading2 {
+  top: 47%;
+  right: 42.7%;
+  border-top: 4px solid rgba(240, 197, 8, 0.863);
+}
+.loading3 {
+  top: 47%;
+  border-right: 4px solid rgba(4, 226, 226, 0.863);
+}
+.error {
+  color: red;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingWrapper span {
+  font-size: 20px;
+  margin-top: 70px;
+  font-weight: bold;
+}

@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00b1f1;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  background-color: #cb3144;
+  margin-bottom: 50px;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.online {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 5px 3px 0px rgba(3, 3, 3, 0.644);
+  font-weight: bold;
+  color: #fff;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+}
+
+.navList li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navList li a:hover {
+  font-weight: bold;
+}
+
+.coursesList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.coursesListItems {
+  width: 30%;
+  text-align: center;
+  height: 100px;
+  border: 3px solid #cb3144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+/* .coursesListItems::after{
+  content: "Teachers";
+  width: 66px;
+  height: 20px;
+  font-size: 14px;
+  border: 1px solid blue;
+  position: absolute;
+  left: 0;
+} */
+
+.teachers {
+  width: 100px;
+  height: 25px;
+  font-size: 14px;
+  border: 2px solid rgba(0, 204, 255, 0.781);
+  border-radius: 15px;
+  position: absolute;
+  transform: translate(-130px, 40px);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.teachers i {
+  margin-left: 7px;
+  transform: rotate(-90deg);
+}
+
+.groups {
+  width: 100px;
+  height: 25px;
+  font-size: 14px;
+  border: 2px solid rgba(0, 204, 255, 0.781);
+  border-radius: 15px;
+  position: absolute;
+  transform: translate(130px, 40px);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.groups i {
+  margin-left: 7px;
+  transform: rotate(-90deg);
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #cb3144;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0%;
+}
+footer button {
+  width: 170px;
+  height: 30px;
+  background-color: #fff;
+  color: #cb3144;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+footer button:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #cb3144;
+}
+
+.modal {
+  position: fixed;
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(1rem);
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.out {
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+}
+
+.modal h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000;
+  /* text-shadow: 3px 3px 3px  black; */
+}
+
+.modal i {
+  transform: translate(500px, 88px);
+  font-size: 30px;
+  color: #161515;
+  /* text-shadow: 3px 3px 3px  black; */
+}
+
+.modal ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal ul li {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5px;
+}
+
+.coursesListItems .cost {
+  font-size: 20px;
+  border: 2px solid #cb3144;
+  width: 100px;
+  height: 33px;
+  border-radius: 17px;
+  position: absolute;
+  transform: translate(122px, -27px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mony{
+  font-size: 20px;
+  margin-left: 20px;
+}
+#tName {
+  font-size: 14px;
+  border: 2px solid #cb3144;
+  width: 180px;
+  height: 22px;
+  border-radius: 17px;
+  position: absolute;
+  transform: translate(83px, -32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oursName {
+  font-size: 18px;
+}
+
+#Sname {
+  font-size: 20px;
+}
